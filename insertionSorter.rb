@@ -35,7 +35,6 @@ class InsertionSortTest < Minitest::Test
   def test_insertion_sort_will_sort
     puts "this is insertion_sort test"
     arrayTopass=[1,3,2,4,2,4]
-   
     assert insertion_sort(arrayTopass)==[1,2,2,3,4,4]
     assert insertion_sort([3,2,1])==[1,2,3]
   
