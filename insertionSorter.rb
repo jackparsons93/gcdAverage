@@ -43,6 +43,7 @@ class InsertionSortTest < Minitest::Test
   end
   def test_reverse_insertion_sort_will_reverse_sort
     assert reverse_insertion_sort([1,3,2,4]) == [4,3,2,1]
+    assert reverse_insertion_sort([4,2,3])== [4,3,2]
   end
 end
 
