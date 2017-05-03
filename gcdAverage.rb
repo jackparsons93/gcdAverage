@@ -78,6 +78,7 @@ class GCD
     return gcdStepArrayUpToFive
   end
 
+  def fiveLoopExtraction
 
-end
+  end
 
