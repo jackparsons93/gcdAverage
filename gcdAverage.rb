@@ -20,6 +20,12 @@ class GCDTest < Minitest::Test
     assert gcdTestObject.gcdOfFiveUpToFive==[1,1,1,1,5]
   end 
 
+  def test_count_of_loop
+    gcdTestObject=GCD.new(0,0)
+    assert gcdTestObject.remainderStepsUpToFive==[1,2,3,2,1]
+  end
+
+
 end
 
 
@@ -60,5 +66,18 @@ class GCD
     end
     return gcdArrayUpToFive
   end
+
+  def remainderStepsUpToFive
+    @m=5
+    gcdStepArrayUpToFive=[]
+    for x in 1..5
+      @n=x
+      euclidGcd
+      gcdStepArrayUpToFive << gcdRemainderSteps
+    end
+    return gcdStepArrayUpToFive
+  end
+
+
 end
 
