@@ -60,5 +60,6 @@ class GCD
 		end
 		return gcdArrayUpToFive
 	end
+  
 end
 
